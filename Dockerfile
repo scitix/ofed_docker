@@ -38,5 +38,7 @@ RUN ./mlnxofedinstall --force
 # Clean up
 RUN rm -rf /tmp/${MLNX_OFED_PACKAGE}.tgz
 
+WORKDIR /root
+
 # Set default command
 CMD ["/bin/bash"]
