@@ -33,7 +33,7 @@ WORKDIR /tmp/${MLNX_OFED_PACKAGE}
 
 # You can add additional commands here to install the package if needed
 # For example:
-# RUN ./mlnxofedinstall --user-space-only --without-fw-update --force
+RUN ./mlnxofedinstall --user-space-only --without-fw-update --force
 
 # Clean up
 RUN rm -rf /tmp/${MLNX_OFED_PACKAGE}.tgz
